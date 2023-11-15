@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>PricePointBook.Benchmarks</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PricePointBook\PricePointBook.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="BenchmarkDotNet.Artifacts\results\" />
+    </ItemGroup>
+
+</Project>

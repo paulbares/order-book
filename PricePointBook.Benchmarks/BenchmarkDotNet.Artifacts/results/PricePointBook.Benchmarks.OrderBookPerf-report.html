@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>PricePointBook.Benchmarks.OrderBookPerf-20231115-155330</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.10, macOS Sonoma 14.0 (23A344) [Darwin 23.0.0]
+Apple M2 Max, 1 CPU, 12 logical and 12 physical cores
+.NET SDK 7.0.403
+  [Host]     : .NET 7.0.13 (7.0.1323.51816), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 7.0.13 (7.0.1323.51816), Arm64 RyuJIT AdvSIMD
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>NumberOfPrices</th><th>RatioNumberOfPricesToUpdate</th><th>RatioNumberOfPricesToRemove</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Initialize</td><td>1024</td><td>0.25</td><td>0.0625</td><td>891.2 &mu;s</td><td>3.06 &mu;s</td><td>2.71 &mu;s</td><td>1.9531</td><td>21025 B</td>
+</tr><tr><td>Updates</td><td>1024</td><td>0.25</td><td>0.0625</td><td>128.4 &mu;s</td><td>0.20 &mu;s</td><td>0.17 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>1024</td><td>0.25</td><td>0.125</td><td>887.6 &mu;s</td><td>1.90 &mu;s</td><td>1.69 &mu;s</td><td>1.9531</td><td>21025 B</td>
+</tr><tr><td>Updates</td><td>1024</td><td>0.25</td><td>0.125</td><td>128.1 &mu;s</td><td>0.21 &mu;s</td><td>0.19 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>1024</td><td>0.5</td><td>0.0625</td><td>889.8 &mu;s</td><td>2.13 &mu;s</td><td>1.78 &mu;s</td><td>1.9531</td><td>21025 B</td>
+</tr><tr><td>Updates</td><td>1024</td><td>0.5</td><td>0.0625</td><td>128.0 &mu;s</td><td>0.32 &mu;s</td><td>0.30 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>1024</td><td>0.5</td><td>0.125</td><td>888.3 &mu;s</td><td>1.92 &mu;s</td><td>1.79 &mu;s</td><td>1.9531</td><td>21025 B</td>
+</tr><tr><td>Updates</td><td>1024</td><td>0.5</td><td>0.125</td><td>128.0 &mu;s</td><td>0.17 &mu;s</td><td>0.15 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>2048</td><td>0.25</td><td>0.0625</td><td>1,813.9 &mu;s</td><td>7.00 &mu;s</td><td>6.55 &mu;s</td><td>3.9063</td><td>40802 B</td>
+</tr><tr><td>Updates</td><td>2048</td><td>0.25</td><td>0.0625</td><td>128.1 &mu;s</td><td>0.22 &mu;s</td><td>0.20 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>2048</td><td>0.25</td><td>0.125</td><td>1,818.3 &mu;s</td><td>16.67 &mu;s</td><td>13.92 &mu;s</td><td>3.9063</td><td>40802 B</td>
+</tr><tr><td>Updates</td><td>2048</td><td>0.25</td><td>0.125</td><td>126.9 &mu;s</td><td>0.32 &mu;s</td><td>0.27 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>2048</td><td>0.5</td><td>0.0625</td><td>1,853.2 &mu;s</td><td>22.80 &mu;s</td><td>20.22 &mu;s</td><td>3.9063</td><td>40802 B</td>
+</tr><tr><td>Updates</td><td>2048</td><td>0.5</td><td>0.0625</td><td>127.8 &mu;s</td><td>1.03 &mu;s</td><td>0.91 &mu;s</td><td>-</td><td>40 B</td>
+</tr><tr><td>Initialize</td><td>2048</td><td>0.5</td><td>0.125</td><td>1,844.9 &mu;s</td><td>8.56 &mu;s</td><td>7.59 &mu;s</td><td>3.9063</td><td>40802 B</td>
+</tr><tr><td>Updates</td><td>2048</td><td>0.5</td><td>0.125</td><td>128.4 &mu;s</td><td>1.29 &mu;s</td><td>1.20 &mu;s</td><td>-</td><td>40 B</td>
+</tr></tbody></table>
+</body>
+</html>

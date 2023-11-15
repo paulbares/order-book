@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PricePointBook.UnitTests", "PricePointBook.UnitTests\PricePointBook.UnitTests.csproj", "{72D25279-ECC8-4EB2-9BB7-1B0B74043444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PricePointBook.Benchmarks", "PricePointBook.Benchmarks\PricePointBook.Benchmarks.csproj", "{B00ECB9B-3EFC-426E-9CD8-9B845FB69679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PricePointBook", "PricePointBook\PricePointBook.csproj", "{D7974A91-639B-4D8D-9C0A-1D4E8FCF9CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72D25279-ECC8-4EB2-9BB7-1B0B74043444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D25279-ECC8-4EB2-9BB7-1B0B74043444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D25279-ECC8-4EB2-9BB7-1B0B74043444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D25279-ECC8-4EB2-9BB7-1B0B74043444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B00ECB9B-3EFC-426E-9CD8-9B845FB69679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B00ECB9B-3EFC-426E-9CD8-9B845FB69679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B00ECB9B-3EFC-426E-9CD8-9B845FB69679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B00ECB9B-3EFC-426E-9CD8-9B845FB69679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7974A91-639B-4D8D-9C0A-1D4E8FCF9CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7974A91-639B-4D8D-9C0A-1D4E8FCF9CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7974A91-639B-4D8D-9C0A-1D4E8FCF9CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7974A91-639B-4D8D-9C0A-1D4E8FCF9CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
