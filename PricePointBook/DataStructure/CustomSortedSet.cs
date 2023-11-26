@@ -128,7 +128,7 @@ public class CustomSortedSet<T> : IEnumerable<T>
                         newGrandParent.Color = parent.Color;
                         parent.ColorBlack();
                         current.ColorRed();
- 
+
                         ReplaceChildOrRoot(grandParent, parent, newGrandParent);
                         if (parent == match)
                         {
@@ -150,13 +150,13 @@ public class CustomSortedSet<T> : IEnumerable<T>
                 if (comparer.Compare(MinValue, current.Item) == 0)
                 {
                     // The min is being removed.
-                    MinValue = parent.Item;
+                    MinValue = current.Right != null ? current.Right.Item : parent.Item;
                 }
 
                 if (comparer.Compare(MaxValue, current.Item) == 0)
                 {
                     // The max is being removed.
-                    MaxValue = parent.Item;
+                    MaxValue = current.Left != null ? current.Left.Item : parent.Item;
                 }
 
                 parentOfMatch = parent;
